@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
                                 "-l[<val1>,...] or --list=[<num1>,...] - input list\n";
     int rez;
     double size = 1.0;
-    bool h_level = false, f_level = false, s_level = false, v_level = false, n_level = false;
+    bool h_level = false, f_level = false, s_level = false, v_level = false, l_level = false;
     int option_index;
 
     while ((rez = getopt_long(argc, argv, short_options,
@@ -72,7 +72,7 @@ int main(int argc, char *argv[]) {
                 break;
             }
             case 'l': {
-                if (!n_level) {
+                if (!l_level) {
                     printf("** Your list: { ");
                     char *elem = strtok(optarg, ",");
                     while (elem != NULL) {
@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
                         elem = strtok(NULL, ",");
                     }
                     printf("} **\n");
-                    n_level = true;
+                    l_level = true;
                 }
                 break;
             }
