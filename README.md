@@ -11,4 +11,4 @@
     -l[<val1>,...] or --list=[<num1>,...] - input list  
     
 Результат виконання:  
-![image](https://user-images.githubusercontent.com/31134655/102014907-1f3ac780-3d61-11eb-8e43-6c9076e77d1c.png)  
+![image](https://user-images.githubusercontent.com/31134655/102015077-f36c1180-3d61-11eb-9ddf-051b344b57c0.png)  
